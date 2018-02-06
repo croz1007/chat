@@ -24,7 +24,13 @@ defmodule ChatWeb.ChatRoomChannel do
     {:noreply, socket}
   end
 
-  def handle_info(:after_jion, socket) do
+  def handle_info(:after_join, socket) do
+    Chat.Message.get_msgs() 
+    |> Enum.each(fn msg -> push(socket, "shout", 
+      %{
+        name: msg.name,
+        message: msg.message,
+      }) end)
     {:noreply, socket}
   end
 
