@@ -1,11 +1,11 @@
 <div id='message-list' class='row'>
 </div>
 
-<div class='row form-group'>
-  <div class='col-md-3'>
+<div class='row'>
+  <div class='column column-25'>
     <input type='text' id='name' class='form-control' placeholder='Name'>
   </div>
-  <div class='col-md-9'>
+  <div class='column column-75'>
     <input type='text' id='msg' class='form-control' placeholder='Message'>
   </div>
 </div>
