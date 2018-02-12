@@ -29,7 +29,7 @@ defmodule ChatWeb.ChatRoomChannel do
     |> Enum.each(fn msg -> push(socket, "shout", 
       %{
         name: msg.name,
-        message: msg.message,
+        message: msg.message
       }) end)
     {:noreply, socket}
   end
