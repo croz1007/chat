@@ -1,3 +1,5 @@
+Live demo: https://safe-basin-21405.herokuapp.com/
+
 # Chat
 
 To start your Phoenix server:
